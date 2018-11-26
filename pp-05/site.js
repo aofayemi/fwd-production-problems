@@ -43,7 +43,9 @@ console.log(typeof(i)) // should be 'undefined', not 3
 //  4. Explain why this function does not modify the global
 //  variable x declared on line 5 above. Write your explanation
 //  as JavaScript comments.
-
+//This function did not modifiy the global variable x
+//because it passed through a function addTwo().
+//It only applies to the variable it passed through which is x. 
 function addTwo(x) {
   x = x + 2;
   return x;
